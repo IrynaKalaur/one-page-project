@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Madeira</title>
+  </head>
+  <style>
+    body {
+      background: linear-gradient(
+        178.6deg,
+        rgb(232, 245, 253) 3.3%,
+        rgb(252, 253, 255) 109.6%
+      );
+    }
+    h1,
+    h2 {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+      text-align: center;
+    }
+    h1 {
+      color: #f91e6e;
+      font-size: 36px;
+      line-height: 44px;
+    }
+    h2 {
+      margin-bottom: 25px;
+      line-height: 32px;
+    }
+    img {
+      display: block;
+      max-width: 77%;
+      margin: 15px auto;
+      transition: all 500ms ease-in-out;
+    }
+    img:hover {
+      transform: scale(1.05);
+    }
+    p {
+      margin: 22px 65px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: #373634;
+      text-align: justify;
+      line-height: 1.4;
+    }
+    a {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 14px;
+      color: #f91e6e;
+      text-decoration: none;
+      transition: all 200ms ease-in-out;
+      margin-left: 65px;
+    }
+    a:hover {
+      cursor: pointer;
+      color: #d11a5d;
+      text-decoration: underline;
+    }
+    button {
+      display: block;
+      font-size: 16px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: #fff;
+      background-color: #00c5de;
+      border: 1px solid #00c5de;
+      border-radius: 40px;
+      margin: 22px auto;
+      padding: 17px 24px;
+      transition: all 200ms ease-in-out;
+      box-shadow: 5px 5px 5px #f1f1f3;
+    }
+    button:hover {
+      cursor: pointer;
+      color: #00c5de;
+      background-color: #fff;
+    }
+    .container {
+      border-radius: 30px;
+      background-color: #fff;
+      margin: 0 auto;
+      display: block;
+      max-width: 700px;
+      padding: 10px;
+    }
+    .discover {
+      color: #fff;
+      background-color: #00c5de;
+      padding: 0 5px;
+    }
+    .last-paragraph {
+      margin-bottom: 10px;
+    }
+    .read-more {
+      text-align: center;
+    }
+    .author {
+      margin: 10px auto 0;
+      font-family: monospace;
+      font-weight: lighter;
+      font-size: 10px;
+      color: #575753;
+      text-align: center;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>Visit Madeira!</h1>
+      <h2>
+        <span class="discover"
+          >Discover the idyllic settings of this island oasis
+        </span>
+      </h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/062/884/original/2IMG_1703.jpg?1673715403"
+        alt="Madeira island"
+      />
+      <p>
+        This archipelago consists of the islands of Madeira and Porto Santo, the
+        only inhabited islands, and also the Desertas and Selvagens islands,
+        important nature reserves. It combines European urban sophistication
+        with stunning natural beauty.
+      </p>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/062/885/original/2IMG_1702.JPG?1673715517"
+        alt="Mountains"
+      />
+      <p>
+        This archipelago is also home to the millenary Laurissilva forest, a
+        UNESCO World Natural Heritage Site. Between the crystal-clear sea and
+        the green mountains, there is a world of activities to enjoy in Nature,
+        framed by magical sceneries.
+      </p>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/062/883/original/2IMG_1636.jpg?1673714583"
+        alt="Beach in Madeira"
+      />
+      <p class="last-paragraph">
+        The archipelago benefits from an extremely pleasant subtropical climate,
+        recording mild temperatures all year round. In addition, the islands are
+        bathed by crystal-clear, warm waters. Sea temperatures here vary between
+        18 °C and 22 °C.
+      </p>
+      <span class="read-more">
+        <a
+          href="https://visitmadeira.com/en/travel-info/about-us-and-where-we-are/"
+          target="_blank"
+          ><em>Learn more about Madeira!</em></a
+        ></span
+      >
+      <button>Know the tour dates</button>
+      <hr />
+      <p class="author">This page was built by <strong>Iryna Kalaur</strong></p>
+    </div>
+    <script>
+      function knowDate() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+
+        if (name.length > 0 && email.length > 5) {
+          alert(
+            "Hello, " +
+              name +
+              "! We will send all details by email. <br/>Let`s discover Madeira together!"
+          );
+        } else {
+          alert("Oops, we need your contact details!");
+        }
+      }
+      let knowDateButton = document.querySelector("button");
+      knowDateButton.addEventListener("click", knowDate);
+    </script>
+  </body>
+</html>
