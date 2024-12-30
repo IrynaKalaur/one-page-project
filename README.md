@@ -13,7 +13,7 @@ This is a small single-page project created using **HTML**, **CSS**, and **JavaS
    ```bash
    git clone https://github.com/IrynaKalaur/one-page-project.git
    ```
-2. Open the `index.html` file in your browser to explore the site.
+2. Open the `html-css-javascript.html` file in your browser to explore the site.
 
 ## Future Enhancements
 - Add more interactive features using JavaScript.
